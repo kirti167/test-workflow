@@ -1,3 +1,3 @@
 ab=["kirti","nagpal"]
-bb=ab[1]
+bb=ab[0]
 print(bb)
