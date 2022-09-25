@@ -31,11 +31,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-         python one.py
+         python ones.py
 
   build2:
     # needs: build
-    if: ${{ always{} }}
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
