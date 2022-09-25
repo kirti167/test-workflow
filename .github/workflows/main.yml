@@ -34,7 +34,8 @@ jobs:
          python one.py
 
   build2:
-    needs: build
+    # needs: build
+    if: ${{ always{} }}
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
